@@ -85,7 +85,7 @@ const runProgram = async () => {
             await createCustomer();
         } else if (command === 2) {
             console.log('View customers');
-            await viewCustomers();
+            const customers = await viewCustomers();
         } else if (command === 3) {
             console.log('Update a customer');
             await updateCustomer();
